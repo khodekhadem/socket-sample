@@ -3,7 +3,7 @@ import socket
 
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.connect((socket.gethostbyname(int(input('enter server ip :  '))), int(input("enter port :"))))
+s.connect((socket.gethostbyname(str(input('enter server ip :  '))), int(input("enter port :"))))
 
 full_msg = ''
 while True:
